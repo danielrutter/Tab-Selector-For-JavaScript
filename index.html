@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<title>Tab Selector For JavaScript</title>
+<link rel="stylesheet" href="css/default.css">
+
+<script src="js/jquery-3.1.0.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".tab-1").click(function(){
+        $("#tab-1").show();
+        $("#tab-2").hide();
+    });
+    $(".tab-2").click(function(){
+        $("#tab-2").show();
+        $("#tab-1").hide();
+    });
+});
+</script>
+
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="tab-selector-title">
+  SELECT ONE OF THE TABS:
+</div>
+
+<div id="tab-selector-tabs">
+  <button class="tab-1"><span style="color: black">TAB 1</span></button>
+  <button class="tab-2"><span style="color: black">TAB 2</span></button>
+</div>
+
+<br>
+
+<div id="tab-1">
+  DISPLAY TAB 1
+</div>
+
+<div id="tab-2">
+  DISPLAY TAB 2
+</div>
+
+</div>
+
+</body>
+</html>
